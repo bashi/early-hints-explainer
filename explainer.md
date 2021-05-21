@@ -87,7 +87,7 @@ We also consider exposing whether resources are preloaded by 103 responses via t
 
 ```js
 const entry = performance.getEntriesByName("https://example.com/early-hints-preloaded.css")[0];
-console.log(entry.fetchedVia); // => "early-hints"
+console.log(entry.initiatorType); // => "early-hints"
 ```
 
 ## References
